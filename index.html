@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>个人主页</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    .header {
+      background: linear-gradient(to left, #6A0572, #A6037B, #F32E7A);
+      color: #ffffff;
+      padding: 50px 0;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 3em;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 60px auto;
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .profile-info {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .profile-pic {
+      margin-right: 30px;
+      border-radius: 50%;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.05);
+    }
+    .profile-info h2 {
+      margin: 0;
+      font-size: 2.4em;
+      color: #333;
+      font-weight: 600;
+    }
+    .profile-info p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .skills, .projects {
+      margin-top: 50px;
+    }
+    .skills h3, .projects h3 {
+      font-size: 1.8em;
+      color: #333;
+      border-bottom: 3px solid #A6037B;
+      display: inline-block;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+    .skills ul, .projects ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .skills ul li, .projects ul li {
+      background-color: #f9f9fb;
+      margin: 15px 0;
+      padding: 20px;
+      border-left: 6px solid #F32E7A;
+      border-radius: 6px;
+      color: #444;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .skills ul li:hover, .projects ul li:hover {
+      background-color: #f1f1f4;
+      transform: translateX(15px);
+    }
+    .footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      position: relative;
+      margin-top: 50px;
+      width: 100%;
+      box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Liu Yulu 的个人主页</h1>
+</div>
+
+<div class="container">
+  <div class="profile-info">
+    <img src="wallhaven-g73kk3.png" alt="Liu Yulu" class="profile-pic">
+    <div>
+      <h2>刘雨璐</h2>
+      <p>生物医学工程专业 | 深圳大学</p>
+      <p>研究方向: 情感计算</p>
+    </div>
+  </div>
+
+  <div class="skills">
+    <h3>技能</h3>
+    <ul>
+      <li>编程语言: Matlab, Python</li>
+      <li>机器学习: GAN, Transformer</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2024 Liu Yulu. 保留所有权利.</p>
+</div>
+
+</body>
+</html>
